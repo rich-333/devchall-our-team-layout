@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --color-white: #FFFEFE;
+  --color-light-gray: #F3F4F6;
+  --color-dark-gray: #394150;
+  --color-black: #000000;
+  --color-blue: #263FA9;
+  --color-green: #86E7D4;
+  --color-light-blue: #9DC4F8;
+  --color-purple: #C1B6F8;
+  --color-pink: #EDACD2;
+  --color-vanilla: #F8D8B0;
+  --font-primary: "Outfit", sans-serif;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
