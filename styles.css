@@ -21,4 +21,132 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-white);
+  font-size: 1rem;
+}
+
+.section {
+  max-width: 1200px;
+  min-width: 290px;
+  width: 330px;
+  margin: 1.6rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.header {
+  background-image: url("./resources/Background_decor.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  background-color: var(--color-light-gray);
+}
+
+.header__team {
+  padding: 0;
+  margin: 0;
+  color: var(--color-blue);
+  font-weight: 500;
+}
+
+.header__title {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
+.header__description {
+  margin-top: 0.8rem;
+  color: var(--color-dark-gray);
+}
+
+.article {
+  padding: 0 2rem;
+  aspect-ratio: 1/1;
+  background: linear-gradient(to top,black, );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.article::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 0;
+}
+
+.article__person1 {
+  background-image: url("./resources/person_1.png");
+  background-color: var(--color-purple);
+}
+
+.article__data {
+  position: absolute;
+  bottom: 30px;
+  color: var(--color-white);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.article__name {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.article__specialty {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.article__person2 {
+  background-image: url("./resources/person_2.png");
+  background-color: var(--color-pink);
+}
+
+.article__person3 {
+  background-image: url("./resources/person_3.png");
+  background-color: var(--color-light-blue);
+}
+
+.article__person4 {
+  background-image: url("./resources/person_4.png");
+  background-color: var(--color-vanilla);
+}
+
+.article__person5 {
+  background-image: url("./resources/person_5.png");
+  background-color: var(--color-green);
+}
+
+.seeMembers {
+  aspect-ratio: 1/1;
+  background-color: var(--color-light-gray);
+  padding: 2rem;
+  display: flex;
+  align-items: end;
+}
+
+.seeMembers__link {
+  text-decoration: none;
+  color: var(--color-dark-gray);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  img{
+  
+    
+  }
 }
