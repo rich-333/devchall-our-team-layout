@@ -1,20 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
-  --color-white: #FFFEFE;
-  --color-light-gray: #F3F4F6;
+  --color-white: #fffefe;
+  --color-light-gray: #f3f4f6;
   --color-dark-gray: #394150;
   --color-black: #000000;
-  --color-blue: #263FA9;
-  --color-green: #86E7D4;
-  --color-light-blue: #9DC4F8;
-  --color-purple: #C1B6F8;
-  --color-pink: #EDACD2;
-  --color-vanilla: #F8D8B0;
+  --color-blue: #263fa9;
+  --color-green: #86e7d4;
+  --color-light-blue: #9dc4f8;
+  --color-purple: #c1b6f8;
+  --color-pink: #edacd2;
+  --color-vanilla: #f8d8b0;
   --font-primary: "Outfit", sans-serif;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -63,7 +65,7 @@ body {
 .article {
   padding: 0 2rem;
   aspect-ratio: 1/1;
-  background: linear-gradient(to top,black, );
+  background: linear-gradient(to top, black);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,8 +147,41 @@ body {
   display: flex;
   align-items: center;
   gap: 0.2rem;
-  img{
-  
-    
+}
+
+@media (width > 1024px) {
+  .section {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .header {
+    grid-column: span 3;
+  }
+
+  .seeMembers {
+    grid-row-start: 3;
+  }
+}
+
+@media (width > 1280px) {
+  .section {
+    width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 4.2rem;
+  }
+
+  .header {
+    grid-column: span 2;
+  }
+
+  .seeMembers {
+    grid-row-start: 2;
+    background-image: url("./resources/Background_decor.svg");
+    background-position: -9px -280px;
+    background-repeat: no-repeat;
   }
 }
