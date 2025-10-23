@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet the devChallenges.io team: engineers, designers, and creators driving digital art. Discover their roles and projects."
+    />
 
     <link
       rel="icon"
@@ -17,7 +21,7 @@
   <body>
     <main>
       <section class="section">
-        <header class="header">
+        <header class="header" role="list" aria-labelledby="team-heading">
           <p class="header__team">Our team</p>
           <h1 class="header__title">Meet the brain</h1>
           <p class="header__description">
@@ -27,31 +31,31 @@
           </p>
         </header>
 
-        <article class="article article__person1">
+        <article class="article article__person1" role="listitem">
           <div class="article__data">
             <h2 class="article__name">Liam Novak</h2>
             <p class="article__specialty">Software Engineer</p>
           </div>
         </article>
-        <article class="article article__person2">
+        <article class="article article__person2" role="listitem">
           <div class="article__data">
             <h2 class="article__name">Sophia Moretti</h2>
             <p class="article__specialty">Business Development Manager</p>
           </div>
         </article>
-        <article class="article article__person3">
+        <article class="article article__person3" role="listitem">
           <div class="article__data">
             <h2 class="article__name">Ethan Rossi</h2>
             <p class="article__specialty">Business Development Manager</p>
           </div>
         </article>
-        <article class="article article__person4">
+        <article class="article article__person4" role="listitem">
           <div class="article__data">
             <h2 class="article__name">Isabella Ricci</h2>
             <p class="article__specialty">UX Designer</p>
           </div>
         </article>
-        <article class="article article__person5">
+        <article class="article article__person5" role="listitem">
           <div class="article__data">
             <h2 class="article__name">Noah Conti</h2>
             <p class="article__specialty">Content Creator</p>
@@ -60,7 +64,11 @@
         <div class="seeMembers">
           <a class="seeMembers__link" href="#"
             >See all members
-            <img src="./resources/arrow up right.svg" alt="" />
+            <img
+              src="./resources/arrow up right.svg"
+              alt=""
+              aria-hidden="true"
+            />
           </a>
         </div>
       </section>
