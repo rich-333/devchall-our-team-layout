@@ -172,7 +172,7 @@ body {
 
 @media (width > 1280px) {
   .section {
-    width: 1180px;
+    width: 1170px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-top: 5rem;
