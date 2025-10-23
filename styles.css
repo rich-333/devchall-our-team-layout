@@ -172,10 +172,10 @@ body {
 
 @media (width > 1280px) {
   .section {
-    width: 1200px;
+    width: 1180px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin-top: 4.2rem;
+    margin-top: 5rem;
   }
 
   .header {
@@ -189,7 +189,7 @@ body {
   .seeMembers {
     grid-row-start: 2;
     background-image: url("./resources/Background_decor.svg");
-    background-position: -9px -280px;
+    background-position: -7px -280px;
     background-repeat: no-repeat;
   }
 }
